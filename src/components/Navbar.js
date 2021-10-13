@@ -1,5 +1,6 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import MobilRightMenuSlider from "@material-ui/core/Drawer";
 import {
   AppBar,
   Toolbar,
@@ -26,7 +27,7 @@ const useStyles = makeStyles(theme => ({
   menuSliderContainer: {
     width: 250,
     background: "gray",
-    height: "30rem",
+    height: "100%",
   },
   avatar: {
     display: "block",
@@ -58,12 +59,21 @@ const menuItems = [
 const Navbar = () => {
   const [state, setState] = useState({
     right: false,
-  })
+  });
+
+  const toggleSlider = (slider, open) => () => {
+    setState({ ...state, [slider]: open });
+  };
+
   const classes = useStyles();
 
   const sideList = slider => (
-
-    <Box className={classes.menuSliderContainer} component="div">
+    <Box 
+    className={classes.menuSliderContainer} 
+    component="div"
+    onClick={toggleSlider(slider, false)}
+    
+    >
       <Avatar className={classes.avatar} src={avatar} alt="Qabas Al Ani" />
       <Divider />
       <List>
@@ -87,12 +97,15 @@ const Navbar = () => {
       <Box component="nav">
         <AppBar position="static" style={{ background: "gray" }}>
           <Toolbar>
-            <IconButton>
+            <IconButton onClick={toggleSlider("right", true)}>
               <Dehaze style={{ color: "black" }} />
             </IconButton>
             <Typography variant="h5" style={{ color: "black" }}>
               Qabas Al Ani
             </Typography>
+            <MobilRightMenuSlider anchor="right" open={state.right} onClose={toggleSlider("right", false)}>
+              {sideList("right")}
+            </MobilRightMenuSlider>
           </Toolbar>
         </AppBar>
       </Box>
