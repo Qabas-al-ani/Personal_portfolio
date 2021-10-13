@@ -1,15 +1,12 @@
 import React from "react";
 import Home from "./components/Home";
-import Navbar from "./components/Navbar";
-
-
+import CssBaseline from '@material-ui/core/CssBaseline';
 import "./App.css";
 
 function App() {
   return (
     <>
-  
-      <Navbar />
+      <CssBaseline />
       <Home />
     </>
   );
