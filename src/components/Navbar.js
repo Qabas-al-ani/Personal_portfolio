@@ -11,7 +11,7 @@ import {
   Box,
 } from "@material-ui/core";
 import {
-  ArrowBack,
+  Dehaze,
   AssignmentInd,
   Home,
   Apps,
@@ -21,13 +21,16 @@ import {
 const Navbar = () => {
   return (
     <Box component="nav">
-    <AppBar>
-      <Toolbar>
-        <IconButton> 
-          <ArrowBack />
-        </IconButton>
-      </Toolbar>
-    </AppBar>
+      <AppBar style={{ background: "black" }}>
+        <Toolbar>
+          <IconButton>
+            <Dehaze style={{ color: "gray" }} />
+          </IconButton>
+          <Typography variant="h5" style={{ color: "gray" }} >
+            Qabas Al Ani
+          </Typography>
+        </Toolbar>
+      </AppBar>
     </Box>
   );
 };
