@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   AppBar,
@@ -56,10 +56,13 @@ const menuItems = [
 ];
 
 const Navbar = () => {
+  const [state, setState] = useState({
+    right: false,
+  })
   const classes = useStyles();
 
   const sideList = slider => (
-    
+
     <Box className={classes.menuSliderContainer} component="div">
       <Avatar className={classes.avatar} src={avatar} alt="Qabas Al Ani" />
       <Divider />
