@@ -6,10 +6,18 @@ import avatar from "../avatar.jpg";
 const Header = () => {
   return (
     <Box>
-      <Typography variant="h4">
-        <Typed strings={["Qabas Al Ani"]} typeSpeed={90} />
-      </Typography>
       <Avatar src={avatar} alt="Qabas Al Ani" />
+      <Typography variant="h4">
+        <Typed strings={["Qabas Al Ani"]} typeSpeed={40} />
+      </Typography>
+      <br />
+      <Typography variant="h5">
+        <Typed
+          strings={["Full Stack Web Deleoper", "MERN Stack"]}
+          typeSpeed={40}
+          backSpeed={60}
+        />
+      </Typography>
     </Box>
   );
 };
