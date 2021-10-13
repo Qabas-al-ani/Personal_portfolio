@@ -94,12 +94,12 @@ const Navbar = () => {
   return (
     <>
       <Box component="nav">
-        <AppBar position="static" style={{ background: "gray" }}>
+        <AppBar position="static" style={{ background: "black" }}>
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
-              <Dehaze style={{ color: "black" }} />
+              <Dehaze style={{ color: "white" }} />
             </IconButton>
-            <Typography variant="h5" style={{ color: "black" }}>
+            <Typography variant="h5" style={{ color: "white" }}>
               Qabas Al Ani
             </Typography>
             <MobilRightMenuSlider
