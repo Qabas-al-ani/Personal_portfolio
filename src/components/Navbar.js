@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import MobilRightMenuSlider from "@material-ui/core/Drawer";
+import {Link} from "react-router-dom"
+
+
 import {
   AppBar,
   Toolbar,
@@ -19,6 +22,10 @@ import {
   Home,
   Apps,
   ContactMail,
+  GitHub,
+  LinkedIn,
+  ArrowDownwardRounded,
+
 } from "@material-ui/icons";
 import avatar from "../avatar.jpg";
 import { ListItemText } from "@material-ui/core";
@@ -28,6 +35,7 @@ const useStyles = makeStyles(theme => ({
     width: 250,
     background: "gray",
     height: "100%",
+  
   },
   avatar: {
     display: "block",
@@ -41,10 +49,12 @@ const menuItems = [
   {
     listIcon: <Home />,
     listText: "Home",
+    listPath: '/'
   },
   {
     listIcon: <AssignmentInd />,
     listText: "Resume",
+    listPath: '/resume'
   },
   {
     listIcon: <Apps />,
@@ -54,6 +64,18 @@ const menuItems = [
     listIcon: <ContactMail />,
     listText: "Contacts",
   },
+  {
+    listIcon: <GitHub />,
+    listText: "Github"
+  },
+  {
+    listIcon:<LinkedIn />,
+    listText: "LinkedIn"
+  },
+  {
+listIcon: <ArrowDownwardRounded />,
+listText: "Download My Resume"
+  }
 ];
 
 const Navbar = () => {
@@ -77,7 +99,7 @@ const Navbar = () => {
       <Divider />
       <List>
         {menuItems.map((lsItem, key) => (
-          <ListItem button key={key}>
+          <ListItem button key={key} component={Link} to={lsItem.listPath}>
             <ListItemIcon className={classes.ListItem}>
               {lsItem.listIcon}
             </ListItemIcon>
@@ -99,7 +121,7 @@ const Navbar = () => {
             <IconButton onClick={toggleSlider("right", true)}>
               <Dehaze style={{ color: "white" }} />
             </IconButton>
-            <Typography variant="h5" style={{ color: "white" }}>
+            <Typography variant="h5" style={{ color: "white"  }}>
               Qabas Al Ani
             </Typography>
             <MobilRightMenuSlider

@@ -11,36 +11,41 @@ const useStyles = makeStyles(theme => ({
     margin: theme.spacing(1),
   },
   title: {
-      color: "black"
+    color: "black",
   },
   subtitle: {
-      color: "black",
-      marginBottom: "3rem"
+    color: "black",
+    marginBottom: "3rem",
   },
   typedContainer: {
-      position: "absolute",
-      top:'50%',
-      left:'50%',
-      transform: "translate(-50%, -50%)",
-      width:'100vw',
-      textAlign:'center',
-      zIndex: 1,
-  }
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: "100vw",
+    textAlign: "center",
+    zIndex: 1,
+  },
 }));
 
 const Header = () => {
-    const classes = useStyles()
+  const classes = useStyles();
   return (
     <Box className={classes.typedContainer}>
-        <Grid container justifyContent="center">
-      <Avatar className={classes.avatar} src={avatar} alt="Qabas Al Ani" />
+      <Grid container justifyContent="center">
+        <Avatar className={classes.avatar} src={avatar} alt="Qabas Al Ani" />
       </Grid>
       <Typography className={classes.title} variant="h4">
-        <Typed strings={["Qabas Al Ani"]} typeSpeed={40} />
+        <Typed
+          strings={["Qabas Al Ani"]}
+          style={{ textShadow: "white 1px 0 10px" }}
+          typeSpeed={40}
+        />
       </Typography>
       <br />
       <Typography className={classes.subtitle} variant="h5">
         <Typed
+          style={{ textShadow: "white 1px 0 5px" }}
           strings={[
             "Full Stack Web Developer",
             "Graduate of the UNC Chapel Hill Coding Boot Camp",
