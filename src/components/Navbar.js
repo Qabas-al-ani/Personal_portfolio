@@ -57,21 +57,30 @@ const menuItems = [
 
 const Navbar = () => {
   const classes = useStyles();
+
+  const sideList = slider => (
+    
+    <Box className={classes.menuSliderContainer} component="div">
+      <Avatar className={classes.avatar} src={avatar} alt="Qabas Al Ani" />
+      <Divider />
+      <List>
+        {menuItems.map((lsItem, key) => (
+          <ListItem button key={key}>
+            <ListItemIcon className={classes.ListItem}>
+              {lsItem.listIcon}
+            </ListItemIcon>
+            <ListItemText
+              className={classes.ListItem}
+              primary={lsItem.listText}
+            />
+          </ListItem>
+        ))}
+      </List>
+    </Box>
+  );
+
   return (
     <>
-      <Box className={classes.menuSliderContainer} component="div">
-        <Avatar className={classes.avatar} src={avatar} alt="Qabas Al Ani" />
-        <Divider />
-        <List>
-          {menuItems.map((lsItem, key) => (
-            <ListItem button key={key}>
-              <ListItemIcon>{lsItem.listIcon}</ListItemIcon>
-              <ListItemText primary={lsItem.listText} />
-            </ListItem>
-          ))}
-        </List>
-      </Box>
-
       <Box component="nav">
         <AppBar position="static" style={{ background: "gray" }}>
           <Toolbar>
