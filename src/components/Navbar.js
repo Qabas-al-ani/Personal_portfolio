@@ -68,11 +68,10 @@ const Navbar = () => {
   const classes = useStyles();
 
   const sideList = slider => (
-    <Box 
-    className={classes.menuSliderContainer} 
-    component="div"
-    onClick={toggleSlider(slider, false)}
-    
+    <Box
+      className={classes.menuSliderContainer}
+      component="div"
+      onClick={toggleSlider(slider, false)}
     >
       <Avatar className={classes.avatar} src={avatar} alt="Qabas Al Ani" />
       <Divider />
@@ -103,7 +102,11 @@ const Navbar = () => {
             <Typography variant="h5" style={{ color: "black" }}>
               Qabas Al Ani
             </Typography>
-            <MobilRightMenuSlider anchor="right" open={state.right} onClose={toggleSlider("right", false)}>
+            <MobilRightMenuSlider
+              anchor="right"
+              open={state.right}
+              onClose={toggleSlider("right", false)}
+            >
               {sideList("right")}
             </MobilRightMenuSlider>
           </Toolbar>
