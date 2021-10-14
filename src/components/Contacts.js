@@ -4,6 +4,20 @@ import { TextField, Typography, Button, Grid, Box } from "@material-ui/core";
 import SendIcon from "@material-ui/icons/Send";
 import Navbar from "./Navbar";
 
+const useStyles = makeStyles({
+  form: {
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    position: "absolute",
+  },
+  button: {
+    marginTop: "1rem",
+    color: "tomato",
+    borderColor: "black",
+  },
+});
+
 const InputField = withStyles({
   root: {
     "& label.Mui-focused": {
@@ -27,11 +41,23 @@ const InputField = withStyles({
 })(TextField);
 
 const Contacts = () => {
+  const classes = useStyles();
+
   return (
     <Box component="div">
+        <Navbar />
       <Grid container justify="center">
-        <Box component="form">
-          <Typography variant="h5">hire or fire</Typography>
+        <Box component="form" className={classes.form}>
+          <Typography
+            variant="h5"
+            style={{
+              color: "black",
+              textAlign: "center",
+              textTransform: "uppercase",
+            }}
+          >
+            Contact Information
+          </Typography>
           <InputField
             fullWidth={true}
             label="Name"
@@ -55,9 +81,14 @@ const Contacts = () => {
             margin="dense"
             size="medium"
           />
-          <br/>
-          <Button variant="outlined" fullWidth={true} endIcon={<SendIcon />}>
-              Contact Me
+          <br />
+          <Button
+            className={classes.button}
+            variant="outlined"
+            fullWidth={true}
+            endIcon={<SendIcon />}
+          >
+            Contact Me
           </Button>
         </Box>
       </Grid>
