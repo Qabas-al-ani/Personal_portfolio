@@ -5,6 +5,8 @@ import project1 from "../my-projects/pro2.png";
 import project2 from "../my-projects/tech-blog.png";
 import project3 from "../my-projects/t4 (1).png";
 import project4 from "../my-projects/e-commerce1 (1).gif";
+import project5 from "../my-projects/test.js (1).png";
+import project6 from "../my-projects/project-2.png";
 import { GitHub, TvSharp } from "@material-ui/icons";
 
 import {
@@ -432,7 +434,7 @@ const Projects = () => {
               <Box
                 component="img"
                 className="language-1"
-                src="./badges/javascript.png"
+                src="./badges/html.png"
                 alt="pic"
                 sx={{ height: 50, width: 50, margin: 5 }}
               />
@@ -440,14 +442,14 @@ const Projects = () => {
     <Box
                 component="img"
                 className="language-1"
-                src="./badges/node.png"
+                src="./badges/css.png"
                 alt="pic"
                 sx={{ height: 50, width: 50, margin: 5 }}
               />
    <Box
                 component="img"
                 className="language-1"
-                src="./badges/express.png"
+                src="./badges/javascript.png"
                 alt="pic"
                 sx={{ height: 50, width: 50, margin: 5 }}
               />
@@ -455,20 +457,18 @@ const Projects = () => {
                 <Box
                 component="img"
                 className="language-1"
-                src="./badges/sql.png"
+                src="./badges/bootstrap.png"
                 alt="pic"
                 sx={{ height: 50, width: 50, margin: 5 }}
               />
     <Box
                 component="img"
                 className="language-1"
-                src="./badges/mysql.png"
+                src="./badges/node.png"
                 alt="pic"
                 sx={{ height: 50, width: 50, margin: 5 }}
               />
-
-
-
+  
 
 
 
@@ -483,11 +483,11 @@ const Projects = () => {
 
                   </Typography>
                   <CardActions>
-                    <Button size="small" color="primary">
+                    <Button size="small" color="primary" href="https://github.com/Qabas-al-ani/Team-Profile-Generator" target="_blank">
                       <GitHub style={{ marginRight: 5 }} />
                       GitHub
                     </Button>
-                    <Button size="small" color="primary">
+                    <Button size="small" color="primary" href="https://drive.google.com/file/d/19JsnLfm42VMdz2rwTJ8NzsNYEQ27HjKN/view">
                       <TvSharp style={{ marginRight: 5 }} /> Demo
                     </Button>
                   </CardActions>
@@ -507,27 +507,79 @@ const Projects = () => {
                   component="img"
                   alt="project 6"
                   height="250"
-                  image={project2}
+                  image={project6}
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5">
-                    tech Blog
+                  Weather Dashboard-Api
                   </Typography>
                   <Typography
                     variant="body2"
                     color="textSecondary"
                     component="paragraph"
                   >
-                    A rehab website intended for former addicts to be able to
-                    connect with others and build relationships through posting
-                    to different milestones on the site.
+                This is my Weather Dashboard Api that I created by using the HTML,CSS, Bootstrap, and Javascript. I added a screenshot of the Weather Dashboard, and also i included a little video that shows the functionality of the Weather Dashboard.
+                <Typography  variant="h6" style={{color: "black"}}>
+                  Technologies: 
+                </Typography>
+                  <Box component="div">
+              <Box
+                component="img"
+                className="language-1"
+                src="./badges/html.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+
+    <Box
+                component="img"
+                className="language-1"
+                src="./badges/css.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+   <Box
+                component="img"
+                className="language-1"
+                src="./badges/javascript.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+
+                <Box
+                component="img"
+                className="language-1"
+                src="./badges/bootstrap.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+ 
+  
+
+
+
+
+
+
+              </Box>
+
+
+
+
+
+
+
+
+
+
+
                   </Typography>
                   <CardActions>
-                    <Button size="small" color="primary">
+                    <Button size="small" color="primary" href="https://github.com/Qabas-al-ani/Weather-Dashboard-Api" target="_blank">
                       <GitHub style={{ marginRight: 5 }} />
                       GitHub
                     </Button>
-                    <Button size="small" color="primary">
+                    <Button size="small" color="primary" href="https://qabas-al-ani.github.io/Weather-Dashboard-Api/" target="_blank">
                       <TvSharp style={{ marginRight: 5 }} /> Demo
                     </Button>
                   </CardActions>
