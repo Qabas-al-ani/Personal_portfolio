@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Box } from "@material-ui/core";
 import Navbar from "./Navbar";
+import ScrollReveal from "scrollreveal";
 
 const useStyles = makeStyles(theme => ({
   mainContainer: {
@@ -95,16 +96,35 @@ const useStyles = makeStyles(theme => ({
     padding: "3rem 0",
     textTransform: "uppercase",
   },
+  subHeading: {
+    color: "black",
+    padding: "0",
+    textTransform: "uppercase",
+  },
 }));
 
 const Resume = () => {
   const classes = useStyles();
+
+  useEffect(() => {
+    const sr = ScrollReveal({
+      distance: "100px",
+      duration: 1000,
+      mobile: true,
+    });
+    sr.reveal(`.language-1`, {
+      delay: 100,
+      origin: "right",
+      interval: 100,
+    });
+  }, []);
+
   return (
     <>
       <Navbar />
       <Box component="header" className={classes.mainContainer}>
         <Typography variant="h4" align="center" className={classes.heading}>
-          Working Experience
+          Experience & Education
         </Typography>
         <Box component="div" className={classes.timeLine}>
           <Typography
@@ -113,6 +133,201 @@ const Resume = () => {
           >
             2021
           </Typography>
+          <Box component="div" className={classes.timeLineItem}>
+            <Typography
+              variant="h5"
+              align="left"
+              className={classes.subHeading}
+            >
+              Coding BootCamp at UNC-Chapel Hill
+            </Typography>
+            <Typography variant="body1" align="left">
+              Full Stack Web Developer
+            </Typography>
+            <br />
+            <Typography variant="subTitle" align="center">
+              Full Stack Web Developer, love developing apps and websites with a
+              focus on mobile-first design & graduate of the UNC Chapel Hill
+              Coding Boot Camp
+            </Typography>
+          </Box>
+
+          <Typography
+            variant="h2"
+            className={`${classes.timeLineYear} ${classes.timeLineItem} `}
+          >
+            2021
+          </Typography>
+          <Box component="div" className={classes.timeLineItem}>
+            <Typography
+              variant="h5"
+              align="right"
+              className={classes.subHeading}
+            >
+              Technologies
+            </Typography>
+            <Typography variant="body1" align="right">
+              Tools & Languages
+            </Typography>
+            <br />
+            <br />
+            <Box component="div">
+              <Box
+                component="img"
+                className="language-1"
+                src="./badges/html.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+              <Box
+                component="img"
+                className="language-1"
+                src="./badges/css.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+              <Box
+                component="img"
+                className="language-1"
+                src="./badges/javascript.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+              <Box
+                component="img"
+                className="language-1"
+                src="./badges/react.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+              <Box
+                component="img"
+                className="language-1"
+                src="./badges/node.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+              <Box
+                component="img"
+                className="language-1"
+                src="./badges/express.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+              <Box
+                component="img"
+                className="language-1"
+                src="./badges/npm.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+              <Box
+                component="img"
+                className="language-1"
+                src="./badges/api.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+              <Box
+                component="img"
+                className="language-1"
+                src="./badges/bootstrap.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+              <Box
+                component="img"
+                className="language-1"
+                src="./badges/jest.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+              <Box
+                component="img"
+                className="language-1"
+                src="./badges/github.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+              <Box
+                component="img"
+                className="language-1"
+                src="./badges/jQuery.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+              <Box
+                component="img"
+                className="language-1"
+                src="./badges/materialize.png"
+                alt="pic"
+                sx={{ height: 40, margin: 5 }}
+              />
+              <Box
+                component="img"
+                className="language-1"
+                src="./badges/mongodb.png"
+                alt="pic"
+                sx={{ width: 70, margin: 5 }}
+              />
+              <Box
+                component="img"
+                className="language-1"
+                src="./badges/mysql.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+              <Box
+                component="img"
+                className="language-1"
+                src="./badges/redux1.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+              <Box
+                component="img"
+                className="language-1"
+                src="./badges/sql.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+              <Box
+                component="img"
+                className="language-1"
+                src="./badges/vue1.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+            </Box>
+          </Box>
+
+          <Typography
+            variant="h2"
+            className={`${classes.timeLineYear} ${classes.timeLineItem} `}
+          >
+            2021
+          </Typography>
+          <Box component="div" className={classes.timeLineItem}>
+            <Typography
+              variant="h5"
+              align="left"
+              className={classes.subHeading}
+            >
+              Wake Tech
+            </Typography>
+            <Typography variant="body1" align="left">
+              CTI-110 Web, Pgm, & Db Foundation at wake tech
+            </Typography>
+            <br />
+            <Typography variant="subTitle" align="center">
+              I learned programming, mark-up language and services on the
+              Internet. And topics include standard mark-up language Internet
+              services, creating web pages, using search engines, file transfer
+              programs, and database design and creation with DBMS products. And
+              able to demonstrate knowledge of programming tools, deploy a
+              web-site with mark-up tools, and create a simple database table.
+            </Typography>
+          </Box>
         </Box>
       </Box>
     </>
