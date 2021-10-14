@@ -90,6 +90,11 @@ const useStyles = makeStyles(theme => ({
       },
     },
   },
+  heading: {
+    color: "tomato",
+    padding: "3rem 0",
+    textTransform: "uppercase",
+  },
 }));
 
 const Resume = () => {
@@ -98,13 +103,13 @@ const Resume = () => {
     <>
       <Navbar />
       <Box component="header" className={classes.mainContainer}>
-        <Typography variant="h4" align="center">
+        <Typography variant="h4" align="center" className={classes.heading}>
           Working Experience
         </Typography>
         <Box component="div" className={classes.timeLine}>
           <Typography
             variant="h2"
-            className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+            className={`${classes.timeLineYear} ${classes.timeLineItem} `}
           >
             2021
           </Typography>
