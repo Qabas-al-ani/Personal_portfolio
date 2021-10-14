@@ -25,6 +25,13 @@ import {
   GitHub,
   LinkedIn,
   ArrowDownwardRounded,
+  WorkSharp,
+  ArrowDownwardSharp,
+  ArrowUpward,
+  ArrowUpwardTwoTone,
+  ArrowDropDownRounded,
+  ArrowDropDownCircleTwoTone,
+  CloudDownloadOutlined,
 
 } from "@material-ui/icons";
 import avatar from "../avatar.jpg";
@@ -57,8 +64,9 @@ const menuItems = [
     listPath: '/resume'
   },
   {
-    listIcon: <Apps />,
-    listText: "Portfolio",
+    listIcon: <WorkSharp />,
+    listText: "Projects",
+    listPath: '/projects'
   },
   {
     listIcon: <ContactMail />,
@@ -73,7 +81,7 @@ const menuItems = [
     listText: "LinkedIn"
   },
   {
-listIcon: <ArrowDownwardRounded />,
+listIcon: <CloudDownloadOutlined />,
 listText: "Download My Resume"
   }
 ];
