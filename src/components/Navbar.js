@@ -71,6 +71,7 @@ const menuItems = [
   {
     listIcon: <ContactMail />,
     listText: "Contacts",
+    listPath: '/contacts'
   },
   {
     listIcon: <GitHub />,
