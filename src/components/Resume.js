@@ -109,13 +109,21 @@ const Resume = () => {
   useEffect(() => {
     const sr = ScrollReveal({
       distance: "100px",
-      duration: 1000,
+      duration: 2000,
       mobile: true,
     });
     sr.reveal(`.language-1`, {
       delay: 100,
       origin: "right",
       interval: 100,
+    });
+    sr.reveal(`#bootcamp`, {
+      delay: 300,
+      origin: "left",
+    });
+    sr.reveal(`#wakeTech`, {
+      delay: 300,
+      origin: "left",
     });
   }, []);
 
@@ -133,7 +141,7 @@ const Resume = () => {
           >
             2021
           </Typography>
-          <Box component="div" className={classes.timeLineItem}>
+          <Box component="div" className={classes.timeLineItem} id="bootcamp">
             <Typography
               variant="h5"
               align="left"
@@ -307,7 +315,7 @@ const Resume = () => {
           >
             2021
           </Typography>
-          <Box component="div" className={classes.timeLineItem}>
+          <Box component="div" className={classes.timeLineItem} id="wakeTech">
             <Typography
               variant="h5"
               align="left"
