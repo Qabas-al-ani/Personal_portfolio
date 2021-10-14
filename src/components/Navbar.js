@@ -4,6 +4,7 @@ import MobilRightMenuSlider from "@material-ui/core/Drawer";
 import {Link} from "react-router-dom"
 
 
+
 import {
   AppBar,
   Toolbar,
@@ -15,6 +16,7 @@ import {
   ListItemIcon,
   Typography,
   Box,
+
 } from "@material-ui/core";
 import {
   Dehaze,
@@ -24,13 +26,9 @@ import {
   ContactMail,
   GitHub,
   LinkedIn,
-  ArrowDownwardRounded,
+
   WorkSharp,
-  ArrowDownwardSharp,
-  ArrowUpward,
-  ArrowUpwardTwoTone,
-  ArrowDropDownRounded,
-  ArrowDropDownCircleTwoTone,
+ 
   CloudDownloadOutlined,
 
 } from "@material-ui/icons";
@@ -74,8 +72,8 @@ const menuItems = [
     listPath: '/contacts'
   },
   {
-    listIcon: <GitHub />,
-    listText: "Github"
+    listIcon: <GitHub/>,
+    listText: "Github",
   },
   {
     listIcon:<LinkedIn />,
@@ -96,6 +94,15 @@ const Navbar = () => {
     setState({ ...state, [slider]: open });
   };
 
+  // const handleClick = (e) => {    
+  //   console.log( e.target.textContent)
+  //   if(e.target.textContent === "Github") {
+  //  window.location.replace("www.google.com")
+     
+  //   }
+  
+  // }
+
   const classes = useStyles();
 
   const sideList = slider => (
@@ -108,7 +115,7 @@ const Navbar = () => {
       <Divider />
       <List>
         {menuItems.map((lsItem, key) => (
-          <ListItem button key={key} component={Link} to={lsItem.listPath}>
+          <ListItem button key={key} component={Link} to={lsItem.listPath } >
             <ListItemIcon className={classes.ListItem}>
               {lsItem.listIcon}
             </ListItemIcon>

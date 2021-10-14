@@ -6,6 +6,7 @@ import {Route} from "react-router-dom"
 import Projects from "./components/Projects"
 import "./App.css";
 
+
 function App() {
   return (
     <>
@@ -13,6 +14,8 @@ function App() {
       <Route exact path="/" component={Home} />
       <Route path="/resume" component={Resume} />
       <Route path="/projects" component={Projects} />
+   
+    
     </>
   );
 }
