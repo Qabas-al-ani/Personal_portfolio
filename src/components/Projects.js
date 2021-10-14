@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import project1 from "../my-projects/pro2.png";
 import project2 from "../my-projects/tech-blog.png";
 import project3 from "../my-projects/t4 (1).png";
+import project4 from "../my-projects/e-commerce1 (1).gif";
 import { GitHub, TvSharp } from "@material-ui/icons";
 
 import {
@@ -204,12 +205,12 @@ const Projects = () => {
 
                   </Typography>
                   <CardActions>
-                    <Button size="small" color="primary">
-                      <GitHub style={{ marginRight: 5 }} href="https://github.com/Qabas-al-ani/The-Tech-blog" target="_blank" />
+                    <Button size="small" color="primary" href="https://github.com/Qabas-al-ani/The-Tech-blog" target="_blank">
+                      <GitHub style={{ marginRight: 5 }}  />
                       GitHub
                     </Button>
-                    <Button size="small" color="primary">
-                      <TvSharp style={{ marginRight: 5 }} href="https://serene-cove-48650.herokuapp.com/" target="_blank" /> Demo
+                    <Button size="small" color="primary" href="https://serene-cove-48650.herokuapp.com/" target="_blank">
+                      <TvSharp style={{ marginRight: 5 }}  /> Demo
                     </Button>
                   </CardActions>
                 </CardContent>
@@ -248,7 +249,7 @@ const Projects = () => {
               <Box
                 component="img"
                 className="language-1"
-                src="./badges/javascript.png"
+                src="./badges/html.png"
                 alt="pic"
                 sx={{ height: 50, width: 50, margin: 5 }}
               />
@@ -270,14 +271,14 @@ const Projects = () => {
   <Box
                 component="img"
                 className="language-1"
-                src="./badges/mysql.png"
+                src="./badges/javascript.png"
                 alt="pic"
                 sx={{ height: 50, width: 50, margin: 5 }}
               />
                 <Box
                 component="img"
                 className="language-1"
-                src="./badges/sql.png"
+                src="./badges/mongodb.png"
                 alt="pic"
                 sx={{ height: 50, width: 50, margin: 5 }}
               />
@@ -293,11 +294,11 @@ const Projects = () => {
 
                   </Typography>
                   <CardActions>
-                    <Button size="small" color="primary">
-                      <GitHub style={{ marginRight: 5 }} />
+                    <Button size="small" color="primary" href="https://github.com/Qabas-al-ani/Fitness-Tracker" target="_blank">
+                      <GitHub style={{ marginRight: 5 }}  />
                       GitHub
                     </Button>
-                    <Button size="small" color="primary">
+                    <Button size="small" color="primary" href="https://young-waters-38930.herokuapp.com/?id=6160e97cf44b2100168cded8" target="_blank">
                       <TvSharp style={{ marginRight: 5 }} /> Demo
                     </Button>
                   </CardActions>
@@ -310,35 +311,87 @@ const Projects = () => {
 
 
 
-          {/* Project-2 */}
+          {/* Project-4 */}
           <Grid item xs={12} sm={8} md={6}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  alt="project 2"
+                  alt="project 4"
                   height="250"
-                  image={project2}
+                  image={project4}
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5">
-                    tech Blog
+                  RESTful API E-Commerce
                   </Typography>
                   <Typography
                     variant="body2"
                     color="textSecondary"
                     component="paragraph"
                   >
-                    A rehab website intended for former addicts to be able to
-                    connect with others and build relationships through posting
-                    to different milestones on the site.
+                  This project is the creation of the back end for an e-commerce site to help big companies store their data as Categories, Products, Tags by getting the data needed or creating ond posting or deleting and that's all been made by the backend, in this app i used Express.js API and Sequelize to interact with database.
+                    <Typography  variant="h6" style={{color: "black"}}>
+                  Technologies: 
+                </Typography>
+                  <Box component="div">
+              <Box
+                component="img"
+                className="language-1"
+                src="./badges/javascript.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+
+    <Box
+                component="img"
+                className="language-1"
+                src="./badges/node.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+   <Box
+                component="img"
+                className="language-1"
+                src="./badges/express.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+
+                <Box
+                component="img"
+                className="language-1"
+                src="./badges/sql.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+    <Box
+                component="img"
+                className="language-1"
+                src="./badges/mysql.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+
+
+
+
+
+
+
+
+
+              </Box>
+
+
+
                   </Typography>
                   <CardActions>
-                    <Button size="small" color="primary">
+                    <Button size="small" color="primary" href="https://github.com/Qabas-al-ani/RESTful-API-E-Commerce" target="_blank">
                       <GitHub style={{ marginRight: 5 }} />
                       GitHub
                     </Button>
-                    <Button size="small" color="primary">
+                    <Button size="small" color="primary" href="https://github.com/Qabas-al-ani/RESTful-API-E-Commerce/blob/main/Assets/e-commerce1.gif" target="_blank">
                       <TvSharp style={{ marginRight: 5 }} /> Demo
                     </Button>
                   </CardActions>
@@ -351,28 +404,83 @@ const Projects = () => {
 
 
 
-          {/* Project-2 */}
+          {/* Project-5 */}
           <Grid item xs={12} sm={8} md={6}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  alt="project 2"
+                  alt="project 5"
                   height="250"
-                  image={project2}
+                  image={project5}
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5">
-                    tech Blog
+                    
+                  Team Profile Generator
                   </Typography>
                   <Typography
                     variant="body2"
                     color="textSecondary"
                     component="paragraph"
                   >
-                    A rehab website intended for former addicts to be able to
-                    connect with others and build relationships through posting
-                    to different milestones on the site.
+                  It's back end project that's help users to create a web page for a team that are working together its stats by asking the leader or the manager the insert information about his employee and for each worker there are specific form of questions that have to be field to get full information about each person with each info.
+                  <Typography  variant="h6" style={{color: "black"}}>
+                  Technologies: 
+                </Typography>
+                  <Box component="div">
+              <Box
+                component="img"
+                className="language-1"
+                src="./badges/javascript.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+
+    <Box
+                component="img"
+                className="language-1"
+                src="./badges/node.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+   <Box
+                component="img"
+                className="language-1"
+                src="./badges/express.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+
+                <Box
+                component="img"
+                className="language-1"
+                src="./badges/sql.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+    <Box
+                component="img"
+                className="language-1"
+                src="./badges/mysql.png"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+
+
+
+
+
+
+
+
+
+              </Box>
+
+
+
+
+
                   </Typography>
                   <CardActions>
                     <Button size="small" color="primary">
