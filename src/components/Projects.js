@@ -519,6 +519,9 @@ const Projects = () => {
                     component="paragraph"
                   >
                 This is my Weather Dashboard Api that I created by using the HTML,CSS, Bootstrap, and Javascript. I added a screenshot of the Weather Dashboard, and also i included a little video that shows the functionality of the Weather Dashboard.
+                <br/>
+                <br/>
+        
                 <Typography  variant="h6" style={{color: "black"}}>
                   Technologies: 
                 </Typography>
