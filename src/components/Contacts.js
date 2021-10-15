@@ -46,8 +46,10 @@ const Contacts = () => {
   return (
     <Box component="div">
         <Navbar />
-      <Grid container justify="center">
-        <Box component="form" className={classes.form}>
+      <Grid container justifyContent="center">
+        <Box component="form" className={classes.form} action="https://formsubmit.co/2d2c58bfbd0969e480c284cfd7ae1e7e" method="POST">
+        <input type="hidden" name="_subject" value="New submission!"/>
+              <input type="hidden" name="_captcha" value="false"/>
           <Typography
             variant="h5"
             style={{
@@ -64,6 +66,7 @@ const Contacts = () => {
             variant="outlined"
             margin="dense"
             size="medium"
+            name="name"
           />
           <br />
           <InputField
@@ -72,14 +75,16 @@ const Contacts = () => {
             variant="outlined"
             margin="dense"
             size="medium"
+            name="email"
           />
           <br />
           <InputField
             fullWidth={true}
-            label="Company name"
+            label="Message"
             variant="outlined"
             margin="dense"
             size="medium"
+            name="message"
           />
           <br />
           <Button
@@ -87,6 +92,7 @@ const Contacts = () => {
             variant="outlined"
             fullWidth={true}
             endIcon={<SendIcon />}
+            type="submit"
           >
             Contact Me
           </Button>

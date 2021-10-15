@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import MobilRightMenuSlider from "@material-ui/core/Drawer";
-import {Link} from "react-router-dom"
-
-
+import { Link } from "react-router-dom";
+import { Link as MaterialLink } from "@material-ui/core";
+import Footer from "./Footer";
 
 import {
   AppBar,
@@ -16,7 +16,6 @@ import {
   ListItemIcon,
   Typography,
   Box,
-
 } from "@material-ui/core";
 import {
   Dehaze,
@@ -26,11 +25,8 @@ import {
   ContactMail,
   GitHub,
   LinkedIn,
-
   WorkSharp,
- 
   CloudDownloadOutlined,
-
 } from "@material-ui/icons";
 import avatar from "../avatar.jpg";
 import { ListItemText } from "@material-ui/core";
@@ -40,7 +36,6 @@ const useStyles = makeStyles(theme => ({
     width: 250,
     background: "gray",
     height: "100%",
-  
   },
   avatar: {
     display: "block",
@@ -54,35 +49,41 @@ const menuItems = [
   {
     listIcon: <Home />,
     listText: "Home",
-    listPath: '/'
+    listPath: "/",
   },
   {
     listIcon: <AssignmentInd />,
     listText: "Resume",
-    listPath: '/resume'
+    listPath: "/resume",
   },
   {
     listIcon: <WorkSharp />,
     listText: "Projects",
-    listPath: '/projects'
+    listPath: "/projects",
   },
   {
     listIcon: <ContactMail />,
     listText: "Contacts",
-    listPath: '/contacts'
+    listPath: "/contacts",
   },
   {
-    listIcon: <GitHub/>,
+    listIcon: <GitHub />,
     listText: "Github",
+    listPath: "https://github.com/Qabas-al-ani",
+    external: true,
   },
   {
-    listIcon:<LinkedIn />,
-    listText: "LinkedIn"
+    listIcon: <LinkedIn />,
+    listText: "LinkedIn",
+    listPath: "https://www.linkedin.com/in/qabas-al-ani-7b858863/",
+    external: true,
   },
   {
-listIcon: <CloudDownloadOutlined />,
-listText: "Download My Resume"
-  }
+    listIcon: <CloudDownloadOutlined />,
+    listText: "Download My Resume",
+    listPath: "./qabas-al-ani-resume.pdf",
+    external: true,
+  },
 ];
 
 const Navbar = () => {
@@ -93,15 +94,6 @@ const Navbar = () => {
   const toggleSlider = (slider, open) => () => {
     setState({ ...state, [slider]: open });
   };
-
-  // const handleClick = (e) => {    
-  //   console.log( e.target.textContent)
-  //   if(e.target.textContent === "Github") {
-  //  window.location.replace("www.google.com")
-     
-  //   }
-  
-  // }
 
   const classes = useStyles();
 
@@ -115,7 +107,13 @@ const Navbar = () => {
       <Divider />
       <List>
         {menuItems.map((lsItem, key) => (
-          <ListItem button key={key} component={Link} to={lsItem.listPath } >
+          <ListItem style={{color: 'black'}}
+            button
+            key={key}
+            component={lsItem.external ? MaterialLink : Link}
+            to={lsItem.external ? null : lsItem.listPath}
+            href={lsItem.external ? lsItem.listPath : null} target={lsItem.external ? '_blank' : null}
+          >
             <ListItemIcon className={classes.ListItem}>
               {lsItem.listIcon}
             </ListItemIcon>
@@ -137,7 +135,7 @@ const Navbar = () => {
             <IconButton onClick={toggleSlider("right", true)}>
               <Dehaze style={{ color: "white" }} />
             </IconButton>
-            <Typography variant="h5" style={{ color: "white"  }}>
+            <Typography variant="h5" style={{ color: "white" }}>
               Qabas Al Ani
             </Typography>
             <MobilRightMenuSlider
@@ -146,6 +144,7 @@ const Navbar = () => {
               onClose={toggleSlider("right", false)}
             >
               {sideList("right")}
+              <Footer />
             </MobilRightMenuSlider>
           </Toolbar>
         </AppBar>
