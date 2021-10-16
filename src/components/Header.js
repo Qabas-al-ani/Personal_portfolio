@@ -6,8 +6,8 @@ import avatar from "../avatar.jpg";
 
 const useStyles = makeStyles(theme => ({
   avatar: {
-    width: theme.spacing(15),
-    height: theme.spacing(15),
+    width: theme.spacing(30),
+    height: theme.spacing(30),
     margin: theme.spacing(1),
   },
   title: {
@@ -33,7 +33,7 @@ const Header = () => {
   return (
     <Box className={classes.typedContainer}>
       <Grid container justifyContent="center">
-        <Avatar className={classes.avatar} src={avatar} alt="Qabas Al Ani" />
+        <Avatar  className={classes.avatar} src={avatar} alt="Qabas Al Ani" />
       </Grid>
       <Typography className={classes.title} variant="h4">
         <Typed

@@ -135,7 +135,7 @@ const Navbar = () => {
             <IconButton onClick={toggleSlider("right", true)}>
               <Dehaze style={{ color: "white" }} />
             </IconButton>
-            <Typography variant="h5" style={{ color: "white" }}>
+            <Typography variant="h5" style={{ color: "white", marginLeft: "10px" }}>
               Qabas Al Ani
             </Typography>
             <MobilRightMenuSlider
