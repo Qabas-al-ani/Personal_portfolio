@@ -4,10 +4,8 @@
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
-- [Technologies](#Technologies)
-- [Usage](#usage)
+- [Technologies](#technologies)
 - [Contribution](#contribution)
-- [Test Instructions](#test-instructions)
 - [Questions](#questions)
 
 ## Description:
@@ -31,9 +29,10 @@ npm install
 ```
 
 ### Contribution
-    Contributions, issues, and feature requests are welcome!
-    Give a :star:️ if you like this project!
-
+```
+   Contributions, issues, and feature requests are welcome!
+   Give a ⭐️ if you like this project!
+```
 
 ### A Screenshot of my deployed My Personal Portfolio
 
