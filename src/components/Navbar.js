@@ -135,7 +135,7 @@ const Navbar = () => {
             <CloudDownloadOutlined />
           </ListItemIcon>
           <ListItemText className={classes.ListItem}  >
-             <a target="_blank" className="link-to-resume" href="https://docs.google.com/document/d/1lv11gEQJqT1Z93leMIcgKFFVgeynUAQh/edit?usp=sharing&ouid=116651010306398433414&rtpof=true&sd=true" download="qabas-alani-resume" rel="noreferrer" >Download My Resume</a>
+            <a target="_blank" className="link-to-resume" href="https://docs.google.com/document/d/1lv11gEQJqT1Z93leMIcgKFFVgeynUAQh/edit?usp=sharing&ouid=116651010306398433414&rtpof=true&sd=true" download="qabas-alani-resume" rel="noreferrer" >Download My Resume</a>
           </ListItemText>
         </ListItem>
 
