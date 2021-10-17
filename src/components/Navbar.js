@@ -21,7 +21,6 @@ import {
   Dehaze,
   AssignmentInd,
   Home,
-  Apps,
   ContactMail,
   GitHub,
   LinkedIn,
