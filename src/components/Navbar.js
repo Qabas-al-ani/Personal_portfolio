@@ -27,7 +27,9 @@ import {
   LinkedIn,
   WorkSharp,
   CloudDownloadOutlined,
+  PhoneEnabledOutlined,
 } from "@material-ui/icons";
+
 import avatar from "../avatar.jpg";
 import { ListItemText } from "@material-ui/core";
 
@@ -107,12 +109,14 @@ const Navbar = () => {
       <Divider />
       <List>
         {menuItems.map((lsItem, key) => (
-          <ListItem style={{color: 'black'}}
+          <ListItem
+            style={{ color: "black" }}
             button
             key={key}
             component={lsItem.external ? MaterialLink : Link}
             to={lsItem.external ? null : lsItem.listPath}
-            href={lsItem.external ? lsItem.listPath : null} target={lsItem.external ? '_blank' : null}
+            href={lsItem.external ? lsItem.listPath : null}
+            target={lsItem.external ? "_blank" : null}
           >
             <ListItemIcon className={classes.ListItem}>
               {lsItem.listIcon}
@@ -123,6 +127,14 @@ const Navbar = () => {
             />
           </ListItem>
         ))}
+        <ListItem>
+          <ListItemIcon className={classes.ListItem}>
+            <PhoneEnabledOutlined />
+          </ListItemIcon>
+          <listItemText className={classes.ListItem}>
+            &nbsp; 919 916 9571
+          </listItemText>
+        </ListItem>
       </List>
     </Box>
   );
@@ -135,7 +147,10 @@ const Navbar = () => {
             <IconButton onClick={toggleSlider("right", true)}>
               <Dehaze style={{ color: "white" }} />
             </IconButton>
-            <Typography variant="h5" style={{ color: "white", marginLeft: "10px" }}>
+            <Typography
+              variant="h5"
+              style={{ color: "white", marginLeft: "10px" }}
+            >
               Qabas Al Ani
             </Typography>
             <MobilRightMenuSlider

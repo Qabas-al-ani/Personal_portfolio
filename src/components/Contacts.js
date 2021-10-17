@@ -47,7 +47,7 @@ const Contacts = () => {
     <Box component="div">
         <Navbar />
       <Grid container justifyContent="center">
-        <Box component="form" className={classes.form} action="https://formsubmit.co/2d2c58bfbd0969e480c284cfd7ae1e7e" method="POST">
+        <Box component="form" className={classes.form} action="https://formsubmit.co/qabasalani1@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="New submission!"/>
               <input type="hidden" name="_captcha" value="false"/>
           <Typography

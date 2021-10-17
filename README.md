@@ -11,7 +11,7 @@
 - [Questions](#questions)
 
 ## Description:
-This is my personal portfoio that i've created using the React.js as most with other technologies and languages like HTML, CSS, JavaScript and material UI, I've interdused all my work in Project section, and in Resume section I've a description about the education and experiences and courses that i've went through to learn all what I leaernd and in Contact me section Iinterdused my email and phone number information and also added links to my GitHub, LinkedIn and a PDF of my resume and I added a functionality if the employee want to download it. 
+This is my personal portfolio that i've created using the React.js as most with other technologies and languages like HTML, CSS, JavaScript and material UI, I've introduced all my work in Project section, and in Resume section I've a description about the education and experiences and courses that i've went through to learn all what I learned and in Contact me section I introduced my email and phone number information and also added links to my GitHub, LinkedIn and a PDF of my resume and I added a functionality if the employee want to download it. 
 
 
 ## Technologies
