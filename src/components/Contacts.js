@@ -47,9 +47,10 @@ const Contacts = () => {
     <Box component="div">
         <Navbar />
       <Grid container justifyContent="center">
-        <Box component="form" className={classes.form} action="https://formsubmit.co/qabasalani1@gmail.com" method="POST">
+        <Box component="form" className={classes.form} action="https://formspree.io/f/xjvjdgaq" method="POST">
         <input type="hidden" name="_subject" value="New submission!"/>
               <input type="hidden" name="_captcha" value="false"/>
+           
           <Typography
             variant="h5"
             style={{
