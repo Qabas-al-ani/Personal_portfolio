@@ -16,8 +16,6 @@ function App() {
       <Route path="/resume" component={Resume} />
       <Route path="/projects" component={Projects} />
       <Route path="/contacts" component={Contacts} />
-   
-    
     </>
   );
 }
