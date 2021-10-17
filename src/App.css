@@ -7,3 +7,9 @@ body {
   -o-background: cover;
   background-size: cover;
 }
+
+
+.link-to-resume {
+  text-decoration: none;
+  color: black;
+}

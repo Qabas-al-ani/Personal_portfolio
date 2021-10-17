@@ -79,12 +79,7 @@ const menuItems = [
     listPath: "https://www.linkedin.com/in/qabas-al-ani-7b858863/",
     external: true,
   },
-  {
-    listIcon: <CloudDownloadOutlined />,
-    listText: "Download My Resume",
-    listPath: "./qabas-al-ani-resume.pdf",
-    external: true,
-  },
+ 
 ];
 
 const Navbar = () => {
@@ -97,6 +92,13 @@ const Navbar = () => {
   };
 
   const classes = useStyles();
+
+
+
+
+
+
+  
 
   const sideList = slider => (
     <Box
@@ -116,6 +118,7 @@ const Navbar = () => {
             to={lsItem.external ? null : lsItem.listPath}
             href={lsItem.external ? lsItem.listPath : null}
             target={lsItem.external ? "_blank" : null}
+         
           >
             <ListItemIcon className={classes.ListItem}>
               {lsItem.listIcon}
@@ -126,13 +129,23 @@ const Navbar = () => {
             />
           </ListItem>
         ))}
+
+<ListItem>
+          <ListItemIcon className={classes.ListItem} > 
+            <CloudDownloadOutlined />
+          </ListItemIcon>
+          <ListItemText className={classes.ListItem}  >
+             <a target="_blank" className="link-to-resume" href="https://docs.google.com/document/d/1lv11gEQJqT1Z93leMIcgKFFVgeynUAQh/edit?usp=sharing&ouid=116651010306398433414&rtpof=true&sd=true" download="qabas-alani-resume" rel="noreferrer" >Download My Resume</a>
+          </ListItemText>
+        </ListItem>
+
         <ListItem>
           <ListItemIcon className={classes.ListItem}>
             <PhoneEnabledOutlined />
           </ListItemIcon>
-          <listItemText className={classes.ListItem}>
+          <ListItemText className={classes.ListItem}>
             &nbsp; 919 916 9571
-          </listItemText>
+          </ListItemText>
         </ListItem>
       </List>
     </Box>
