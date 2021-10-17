@@ -37,9 +37,11 @@ npm install
 
 ### A Screenshot of my deployed My Personal Portfolio
 
-![ScreenShots]() 
-
-[full demo video]()
+![ScreenShots](./public/images/1.png) 
+![ScreenShots](./public/images/2.png) 
+![ScreenShots](./public/images/3.png) 
+![ScreenShots](./public/images/4.png) 
+![ScreenShots](./public/images/last.png) 
 
 ### Questions? 
 For any questions, please contact me with the information below:
