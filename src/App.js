@@ -5,6 +5,7 @@ import Resume from "./components/Resume";
 import {Route} from "react-router-dom"
 import Projects from "./components/Projects"
 import Contacts from "./components/Contacts"
+import AboutMe from "./components/AboutMe"
 import "./App.css";
 
 
@@ -12,7 +13,8 @@ function App() {
   return (
     <>
       <CssBaseline />
-      <Route exact path="/" component={Home} />
+      <Route exact path="/" component={Home} />      
+      <Route path="/about-me" component={AboutMe} />       
       <Route path="/resume" component={Resume} />
       <Route path="/projects" component={Projects} />
       <Route path="/contacts" component={Contacts} />

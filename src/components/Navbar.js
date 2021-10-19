@@ -23,6 +23,7 @@ import {
   Home,
   ContactMail,
   GitHub,
+  Info,
   LinkedIn,
   WorkSharp,
   CloudDownloadOutlined,
@@ -53,6 +54,11 @@ const menuItems = [
     listPath: "/",
   },
   {
+    listIcon: <Info />,
+    listText: "About Me",
+    listPath: "/about-me",
+  },
+    {
     listIcon: <AssignmentInd />,
     listText: "Resume",
     listPath: "/resume",
