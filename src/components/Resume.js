@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
-import { makeStyles } from "@material-ui/core/styles";
+
 import { Typography, Box } from "@material-ui/core";
 import Navbar from "./Navbar";
 import ScrollReveal from "scrollreveal";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
   mainContainer: {
@@ -153,7 +154,7 @@ const Resume = () => {
               Full Stack Web Developer
             </Typography>
             <br />
-            <Typography variant="subTitle" align="center">
+            <Typography variant="subtitle1" align="center">
               Full Stack Web Developer, love developing apps and websites with a
               focus on mobile-first design & graduate of the UNC Chapel Hill
               Coding Boot Camp
@@ -327,7 +328,7 @@ const Resume = () => {
               CTI-110 Web, Pgm, & Db Foundation at wake tech
             </Typography>
             <br />
-            <Typography variant="subTitle" align="center">
+            <Typography variant="subtitle1" align="center">
               I learned programming, mark-up language and services on the
               Internet. And topics include standard mark-up language Internet
               services, creating web pages, using search engines, file transfer
@@ -341,5 +342,5 @@ const Resume = () => {
     </>
   );
 };
-
+// paragraph
 export default Resume;

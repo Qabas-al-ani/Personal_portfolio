@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Navbar from "./Navbar";
-import { makeStyles } from "@material-ui/core/styles";
+
 import project1 from "../my-projects/pro2.png";
 import project2 from "../my-projects/tech-blog.png";
 import project3 from "../my-projects/t4 (1).png";
@@ -8,6 +8,7 @@ import project4 from "../my-projects/e-commerce1 (1).gif";
 import project5 from "../my-projects/test.js (1).png";
 import project6 from "../my-projects/project-2.png";
 import { GitHub, TvSharp } from "@material-ui/icons";
+
 
 import {
   Box,
@@ -19,8 +20,12 @@ import {
   CardMedia,
   Button,
   Typography,
+
+
 } from "@material-ui/core";
 import ScrollReveal from "scrollreveal";
+import { makeStyles } from "@material-ui/core/styles";
+
 
 
 const useStyles = makeStyles({
@@ -35,7 +40,6 @@ const useStyles = makeStyles({
 });
 
 const Projects = () => {
-
   useEffect(() => {
     const sr = ScrollReveal({
       distance: "100px",
@@ -72,38 +76,33 @@ const Projects = () => {
       origin: "right",
       interval: 100,
     });
-  
   }, []);
-
-
-
-
 
   const classes = useStyles();
   return (
     <Box component="div" className={classes.mainContainer}>
       <Navbar />
-      <Grid container justify="center">
+      <Grid container justifyContent="center">
         {/* Project-1 */}
         <Grid item xs={12} sm={8} md={6}>
-          <Card className={classes.cardContainer} id='project-1'>
+          <Card className={classes.cardContainer} id="project-1">
             <CardActionArea>
               <CardMedia
                 component="img"
                 alt="project 1"
-                   width="100%"
+                width="100%"
                 height="350"
                 image={project1}
-            
               />
               <CardContent>
-                <Typography gutterBottom variant="h5"     >
+                <Typography gutterBottom variant="h5">
                   Rehab-Connect
                 </Typography>
                 <Typography
                   variant="body2"
                   color="textSecondary"
-                  component="paragraph"
+                  component="div"
+                  style={{fontSize:"18px"}}
                 >
                   A rehab website intended for former addicts to be able to
                   connect with others and build relationships through posting to
@@ -116,7 +115,7 @@ const Projects = () => {
                   </Typography>
                   <Box component="div">
                     <Box
-                      component="img"
+                 component="img"
                       className="language-1"
                       src="./badges/html.png"
                       alt="pic"
@@ -179,11 +178,11 @@ const Projects = () => {
 
         {/* Project-2 */}
         <Grid item xs={12} sm={8} md={6}>
-          <Card className={classes.cardContainer} id='project-2'>
+          <Card className={classes.cardContainer} id="project-2">
             <CardActionArea>
               <CardMedia
                 component="img"
-                alt="project 2"  
+                alt="project 2"
                 width="100%"
                 height="350"
                 image={project2}
@@ -195,7 +194,8 @@ const Projects = () => {
                 <Typography
                   variant="body2"
                   color="textSecondary"
-                  component="paragraph"
+                  component="div"
+                  style={{fontSize:"18px"}}
                 >
                   This is a back end and front end project that allows users to
                   post about whatever they wish. It supports account creation
@@ -271,7 +271,7 @@ const Projects = () => {
 
         {/* Project-3 */}
         <Grid item xs={12} sm={8} md={6}>
-          <Card className={classes.cardContainer} id='project-3'>
+          <Card className={classes.cardContainer} id="project-3">
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -287,7 +287,8 @@ const Projects = () => {
                 <Typography
                   variant="body2"
                   color="textSecondary"
-                  component="paragraph"
+                  component="div"
+                  style={{fontSize:"18px"}}
                 >
                   This app helps users to be able to view create and track daily
                   workouts,to be able to log multiple exercises in a workout on
@@ -363,7 +364,7 @@ const Projects = () => {
 
         {/* Project-4 */}
         <Grid item xs={12} sm={8} md={6}>
-          <Card className={classes.cardContainer} id='project-4'>
+          <Card className={classes.cardContainer} id="project-4">
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -379,7 +380,8 @@ const Projects = () => {
                 <Typography
                   variant="body2"
                   color="textSecondary"
-                  component="paragraph"
+                  component="div"
+                  style={{fontSize:"18px"}}
                 >
                   This project is the creation of the back end for an e-commerce
                   site to help big companies store their data as Categories,
@@ -456,7 +458,7 @@ const Projects = () => {
 
         {/* Project-5 */}
         <Grid item xs={12} sm={8} md={6}>
-          <Card className={classes.cardContainer} id='project-5'>
+          <Card className={classes.cardContainer} id="project-5">
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -472,7 +474,8 @@ const Projects = () => {
                 <Typography
                   variant="body2"
                   color="textSecondary"
-                  component="paragraph"
+                  component="div"
+                  style={{fontSize:"18px"}}
                 >
                   It's back end project that's help users to create a web page
                   for a team that are working together its stats by asking the
@@ -548,7 +551,7 @@ const Projects = () => {
 
         {/* Project-6 */}
         <Grid item xs={12} sm={8} md={6}>
-          <Card className={classes.cardContainer} id='project-6'>
+          <Card className={classes.cardContainer} id="project-6">
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -564,7 +567,8 @@ const Projects = () => {
                 <Typography
                   variant="body2"
                   color="textSecondary"
-                  component="paragraph"
+                  component="div"
+                  style={{fontSize:"18px"}}
                 >
                   This is my Weather Dashboard Api that I created by using the
                   HTML,CSS, Bootstrap, and Javascript. I added a screenshot of

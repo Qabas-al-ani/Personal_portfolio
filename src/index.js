@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 
 ReactDOM.render(
-  <Router basename={window.location.pathname || ''}>
+  <Router basename='/Personal_portfolio'>
     <App />
   </Router>,
   document.getElementById("root")
