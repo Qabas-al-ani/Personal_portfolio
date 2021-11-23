@@ -245,7 +245,7 @@ const Projects = () => {
                     <Box
                       component="img"
                       className="language-1"
-                      src="./badges/material-ui.svg"
+                      src="./badges/mongodb.png"
                       alt="pic"
                       sx={{ height: 50, width: 50, margin: 5 }}
                     />
