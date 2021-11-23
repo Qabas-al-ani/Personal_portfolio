@@ -1,14 +1,15 @@
 import React, { useEffect } from "react";
 import Navbar from "./Navbar";
 
+import projectComic from "../my-projects/comic.jpg";
+import projectStore from "../my-projects/Shop.png";
+import projectBook from "../my-projects/book.png";
 import project1 from "../my-projects/pro2.png";
 import project2 from "../my-projects/tech-blog.png";
 import project3 from "../my-projects/t4 (1).png";
 import project4 from "../my-projects/e-commerce1 (1).gif";
-import project5 from "../my-projects/test.js (1).png";
 import project6 from "../my-projects/project-2.png";
 import { GitHub, TvSharp } from "@material-ui/icons";
-
 
 import {
   Box,
@@ -20,13 +21,9 @@ import {
   CardMedia,
   Button,
   Typography,
-
-
 } from "@material-ui/core";
 import ScrollReveal from "scrollreveal";
 import { makeStyles } from "@material-ui/core/styles";
-
-
 
 const useStyles = makeStyles({
   mainContainer: {
@@ -46,33 +43,44 @@ const Projects = () => {
       duration: 1000,
       mobile: true,
     });
-    sr.reveal(`#project-1`, {
+    sr.reveal(`#project-comic`, {
       delay: 100,
       origin: "left",
+      interval: 100,
+    });
+    sr.reveal(`#project-redux`, {
+      delay: 100,
+      origin: "right",
+      interval: 100,
+    });
+    sr.reveal(`#project-book`, {
+      delay: 200,
+      origin: "left",
+      interval: 100,
+    });
+    sr.reveal(`#project-1`, {
+      delay: 200,
+      origin: "right",
       interval: 100,
     });
     sr.reveal(`#project-2`, {
-      delay: 100,
-      origin: "right",
+      delay: 300,
+      origin: "left",
       interval: 100,
     });
     sr.reveal(`#project-3`, {
-      delay: 200,
-      origin: "left",
-      interval: 100,
-    });
-    sr.reveal(`#project-4`, {
-      delay: 200,
+      delay: 300,
       origin: "right",
       interval: 100,
     });
-    sr.reveal(`#project-5`, {
-      delay: 300,
+    sr.reveal(`#project-4`, {
+      delay: 400,
       origin: "left",
       interval: 100,
     });
+
     sr.reveal(`#project-6`, {
-      delay: 300,
+      delay: 400,
       origin: "right",
       interval: 100,
     });
@@ -83,6 +91,291 @@ const Projects = () => {
     <Box component="div" className={classes.mainContainer}>
       <Navbar />
       <Grid container justifyContent="center">
+        {/* Project-comic-space */}
+        <Grid item xs={12} sm={8} md={6}>
+          <Card className={classes.cardContainer} id="project-comic">
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt="project comic space"
+                width="100%"
+                height="350"
+                image={projectComic}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  Comic Space
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="textSecondary"
+                  component="div"
+                  style={{ fontSize: "18px" }}
+                >
+                  Comic Space is a social media application that leverages the
+                  Marvel Comics API to help users create a digital comic book
+                  collection, and wishlist. It also includes and e-commerce
+                  marketplace, so users can buy, sell, and trade comics.
+                  <br />
+                  <br />
+                  <br />
+                  <Typography variant="h6" style={{ color: "black" }}>
+                    Technologies:
+                  </Typography>
+                  <Box component="div">
+                    <Box
+                      component="img"
+                      className="language-1"
+                      src="./badges/react.png"
+                      alt="pic"
+                      sx={{ height: 50, width: 50, margin: 5 }}
+                    />
+
+                    <Box
+                      component="img"
+                      className="language-1"
+                      src="./badges/graphql.svg"
+                      alt="pic"
+                      sx={{ height: 50, width: 50, margin: 5 }}
+                    />
+                    <Box
+                      component="img"
+                      className="language-1"
+                      src="./badges/javascript.png"
+                      alt="pic"
+                      sx={{ height: 50, width: 50, margin: 5 }}
+                    />
+                    <Box
+                      component="img"
+                      className="language-1"
+                      src="./badges/material-ui.svg"
+                      alt="pic"
+                      sx={{ height: 50, width: 50, margin: 5 }}
+                    />
+
+                    <Box
+                      component="img"
+                      className="language-1"
+                      src="./badges/redux1.png"
+                      alt="pic"
+                      sx={{ height: 50, width: 50, margin: 5 }}
+                    />
+                  </Box>
+                </Typography>
+                <CardActions>
+                  <Button
+                    size="small"
+                    color="primary"
+                    href="https://github.com/jbramirez03/Comic-Space"
+                    target="_blank"
+                  >
+                    <GitHub style={{ marginRight: 5 }} />
+                    GitHub
+                  </Button>
+                  <Button
+                    size="small"
+                    color="primary"
+                    href="https://young-hollows-20691.herokuapp.com/"
+                    target="_blank"
+                  >
+                    <TvSharp style={{ marginRight: 5 }} /> Demo
+                  </Button>
+                </CardActions>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        </Grid>
+
+        {/* Project-redux-store*/}
+        <Grid item xs={12} sm={8} md={6}>
+          <Card className={classes.cardContainer} id="project-redux">
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt="project store"
+                width="100%"
+                height="350"
+                image={projectStore}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  Redux Shopping Store
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="textSecondary"
+                  component="div"
+                  style={{ fontSize: "18px" }}
+                >
+                  An e-commerce app that allows users to go online and shop
+                  whatever they like they just have to be logged in and they can
+                  click on the product increase the quantity or decrease it and
+                  then they can pay with their cards check out their purchases
+                  and see their order historyThis application is built using
+                  Html, Css, Javascript, Node.js, GraphQL, Apollo Server,
+                  MongoDB and it is using React for the front end and Redux for
+                  state management.
+                  <br />
+                  <Typography variant="h6" style={{ color: "black" }}>
+                    Technologies:
+                  </Typography>
+                  <Box component="div">
+                    <Box
+                      component="img"
+                      className="language-1"
+                      src="./badges/react.png"
+                      alt="pic"
+                      sx={{ height: 50, width: 50, margin: 5 }}
+                    />
+
+                    <Box
+                      component="img"
+                      className="language-1"
+                      src="./badges/graphql.svg"
+                      alt="pic"
+                      sx={{ height: 50, width: 50, margin: 5 }}
+                    />
+                    <Box
+                      component="img"
+                      className="language-1"
+                      src="./badges/javascript.png"
+                      alt="pic"
+                      sx={{ height: 50, width: 50, margin: 5 }}
+                    />
+                    <Box
+                      component="img"
+                      className="language-1"
+                      src="./badges/material-ui.svg"
+                      alt="pic"
+                      sx={{ height: 50, width: 50, margin: 5 }}
+                    />
+
+                    <Box
+                      component="img"
+                      className="language-1"
+                      src="./badges/redux1.png"
+                      alt="pic"
+                      sx={{ height: 50, width: 50, margin: 5 }}
+                    />
+                  </Box>
+                </Typography>
+                <CardActions>
+                  <Button
+                    size="small"
+                    color="primary"
+                    href="https://github.com/Qabas-al-ani/Redux-Shopping-Store"
+                    target="_blank"
+                  >
+                    <GitHub style={{ marginRight: 5 }} />
+                    GitHub
+                  </Button>
+                  <Button
+                    size="small"
+                    color="primary"
+                    href="https://grim-cat-76535.herokuapp.com/"
+                    target="_blank"
+                  >
+                    <TvSharp style={{ marginRight: 5 }} /> Demo
+                  </Button>
+                </CardActions>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        </Grid>
+
+        {/* Project-Google-book */}
+        <Grid item xs={12} sm={8} md={6}>
+          <Card className={classes.cardContainer} id="project-book">
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt="project book"
+                width="100%"
+                height="350"
+                image={projectBook}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  Google Search Book MERN
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="textSecondary"
+                  component="div"
+                  style={{ fontSize: "18px" }}
+                >
+                  A fully functional google search engine book it was created
+                  with Restful API and i refactored it to the GraphQL built with
+                  Apollo server with the use of the MERN stack with react front
+                  end MongoDB database, Node.js, Express and API
+                  <br />
+                  <br />
+                  <Typography variant="h6" style={{ color: "black" }}>
+                    Technologies:
+                  </Typography>
+                  <Box component="div">
+                    <Box
+                      component="img"
+                      className="language-1"
+                      src="./badges/react.png"
+                      alt="pic"
+                      sx={{ height: 50, width: 50, margin: 5 }}
+                    />
+
+                    <Box
+                      component="img"
+                      className="language-1"
+                      src="./badges/graphql.svg"
+                      alt="pic"
+                      sx={{ height: 50, width: 50, margin: 5 }}
+                    />
+                    <Box
+                      component="img"
+                      className="language-1"
+                      src="./badges/javascript.png"
+                      alt="pic"
+                      sx={{ height: 50, width: 50, margin: 5 }}
+                    />
+                    <Box
+                      component="img"
+                      className="language-1"
+                      src="./badges/material-ui.svg"
+                      alt="pic"
+                      sx={{ height: 50, width: 50, margin: 5 }}
+                    />
+
+                    <Box
+                      component="img"
+                      className="language-1"
+                      src="./badges/mongodb.png"
+                      alt="pic"
+                      sx={{ height: 50, width: 50, margin: 5 }}
+                    />
+                  </Box>
+                </Typography>
+                <CardActions>
+                  <Button
+                    size="small"
+                    color="primary"
+                    href="https://github.com/Qabas-al-ani/Google-Search-Book-MERN"
+                    target="_blank"
+                  >
+                    <GitHub style={{ marginRight: 5 }} />
+                    GitHub
+                  </Button>
+                  <Button
+                    size="small"
+                    color="primary"
+                    href="https://afternoon-island-53749.herokuapp.com/"
+                  >
+                    <TvSharp style={{ marginRight: 5 }} /> Demo
+                  </Button>
+                </CardActions>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        </Grid>
+
         {/* Project-1 */}
         <Grid item xs={12} sm={8} md={6}>
           <Card className={classes.cardContainer} id="project-1">
@@ -102,7 +395,7 @@ const Projects = () => {
                   variant="body2"
                   color="textSecondary"
                   component="div"
-                  style={{fontSize:"18px"}}
+                  style={{ fontSize: "18px" }}
                 >
                   A rehab website intended for former addicts to be able to
                   connect with others and build relationships through posting to
@@ -115,7 +408,7 @@ const Projects = () => {
                   </Typography>
                   <Box component="div">
                     <Box
-                 component="img"
+                      component="img"
                       className="language-1"
                       src="./badges/html.png"
                       alt="pic"
@@ -195,7 +488,7 @@ const Projects = () => {
                   variant="body2"
                   color="textSecondary"
                   component="div"
-                  style={{fontSize:"18px"}}
+                  style={{ fontSize: "18px" }}
                 >
                   This is a back end and front end project that allows users to
                   post about whatever they wish. It supports account creation
@@ -288,7 +581,7 @@ const Projects = () => {
                   variant="body2"
                   color="textSecondary"
                   component="div"
-                  style={{fontSize:"18px"}}
+                  style={{ fontSize: "18px" }}
                 >
                   This app helps users to be able to view create and track daily
                   workouts,to be able to log multiple exercises in a workout on
@@ -381,7 +674,7 @@ const Projects = () => {
                   variant="body2"
                   color="textSecondary"
                   component="div"
-                  style={{fontSize:"18px"}}
+                  style={{ fontSize: "18px" }}
                 >
                   This project is the creation of the back end for an e-commerce
                   site to help big companies store their data as Categories,
@@ -456,99 +749,6 @@ const Projects = () => {
           </Card>
         </Grid>
 
-        {/* Project-5 */}
-        <Grid item xs={12} sm={8} md={6}>
-          <Card className={classes.cardContainer} id="project-5">
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                alt="project 5"
-                width="100%"
-                height="350"
-                image={project5}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5">
-                  Team Profile Generator
-                </Typography>
-                <Typography
-                  variant="body2"
-                  color="textSecondary"
-                  component="div"
-                  style={{fontSize:"18px"}}
-                >
-                  It's back end project that's help users to create a web page
-                  for a team that are working together its stats by asking the
-                  leader or the manager the insert information about his
-                  employee and for each worker there are specific form of
-                  questions that have to be field to get full information about
-                  each person with each info.
-                  <Typography variant="h6" style={{ color: "black" }}>
-                    Technologies:
-                  </Typography>
-                  <Box component="div">
-                    <Box
-                      component="img"
-                      className="language-1"
-                      src="./badges/html.png"
-                      alt="pic"
-                      sx={{ height: 50, width: 50, margin: 5 }}
-                    />
-
-                    <Box
-                      component="img"
-                      className="language-1"
-                      src="./badges/css.png"
-                      alt="pic"
-                      sx={{ height: 50, width: 50, margin: 5 }}
-                    />
-                    <Box
-                      component="img"
-                      className="language-1"
-                      src="./badges/javascript.png"
-                      alt="pic"
-                      sx={{ height: 50, width: 50, margin: 5 }}
-                    />
-
-                    <Box
-                      component="img"
-                      className="language-1"
-                      src="./badges/bootstrap.png"
-                      alt="pic"
-                      sx={{ height: 50, width: 50, margin: 5 }}
-                    />
-                    <Box
-                      component="img"
-                      className="language-1"
-                      src="./badges/node.png"
-                      alt="pic"
-                      sx={{ height: 50, width: 50, margin: 5 }}
-                    />
-                  </Box>
-                </Typography>
-                <CardActions>
-                  <Button
-                    size="small"
-                    color="primary"
-                    href="https://github.com/Qabas-al-ani/Team-Profile-Generator"
-                    target="_blank"
-                  >
-                    <GitHub style={{ marginRight: 5 }} />
-                    GitHub
-                  </Button>
-                  <Button
-                    size="small"
-                    color="primary"
-                    href="https://drive.google.com/file/d/19JsnLfm42VMdz2rwTJ8NzsNYEQ27HjKN/view"
-                  >
-                    <TvSharp style={{ marginRight: 5 }} /> Demo
-                  </Button>
-                </CardActions>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-        </Grid>
-
         {/* Project-6 */}
         <Grid item xs={12} sm={8} md={6}>
           <Card className={classes.cardContainer} id="project-6">
@@ -568,7 +768,7 @@ const Projects = () => {
                   variant="body2"
                   color="textSecondary"
                   component="div"
-                  style={{fontSize:"18px"}}
+                  style={{ fontSize: "18px" }}
                 >
                   This is my Weather Dashboard Api that I created by using the
                   HTML,CSS, Bootstrap, and Javascript. I added a screenshot of

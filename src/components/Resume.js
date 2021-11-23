@@ -307,6 +307,20 @@ const Resume = () => {
                 alt="pic"
                 sx={{ height: 50, width: 50, margin: 5 }}
               />
+              <Box
+                component="img"
+                className="language-1"
+                src="./badges/qraphql.svg"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
+              <Box
+                component="img"
+                className="language-1"
+                src="./badges/material-ui.svg"
+                alt="pic"
+                sx={{ height: 50, width: 50, margin: 5 }}
+              />
             </Box>
           </Box>
 
