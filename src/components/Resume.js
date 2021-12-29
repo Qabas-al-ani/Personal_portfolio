@@ -126,6 +126,14 @@ const Resume = () => {
       delay: 300,
       origin: "left",
     });
+    sr.reveal(`#front-end`, {
+      delay: 300,
+      origin: "right",
+    });
+    sr.reveal(`#volunteer`, {
+      delay: 300,
+      origin: "left",
+    });
   }, []);
 
   return (
@@ -349,6 +357,65 @@ const Resume = () => {
               programs, and database design and creation with DBMS products. And
               able to demonstrate knowledge of programming tools, deploy a
               web-site with mark-up tools, and create a simple database table.
+            </Typography>
+          </Box>
+
+          <Typography
+            variant="h2"
+            className={`${classes.timeLineYear} ${classes.timeLineItem} `}
+          >
+            2021
+          </Typography>
+          <Box component="div" className={classes.timeLineItem} id="front-end">
+            <Typography
+              variant="h5"
+              align="right"
+              className={classes.subHeading}
+            >
+              Front End Web Developer
+            </Typography>
+            <Typography variant="body1" align="right">
+              QMQ Real Estate Inc
+            </Typography>
+            <br />
+            <Typography variant="subtitle1">
+              Responsible for implementing visual elements that users see and
+              interact within the company's website. Build high-quality mockups
+              and design different prototypes. Assisting the web development
+              team with all aspects of website and application design. Routinely
+              testing and optimizing the company's website for ease of use,
+              speed. Collaborating with developers to implement new web
+              features. Keeping up-to-date with the latest technology and
+              programming trends. Ensuring websites are accessible across many
+              platforms, including laptops and smartphones.
+            </Typography>
+          </Box>
+
+          <Typography
+            variant="h2"
+            className={`${classes.timeLineYear} ${classes.timeLineItem} `}
+          >
+            2020
+          </Typography>
+          <Box component="div" className={classes.timeLineItem} id="volunteer">
+            <Typography
+              variant="h5"
+              align="left"
+              className={classes.subHeading}
+            >
+              Web Developer Intern/Volunteer
+            </Typography>
+            <Typography variant="body1" align="left">
+              QMQ Real Estate Inc
+            </Typography>
+            <br />
+            <Typography variant="subtitle1">
+              Helped create the user interface and interactive aspects of the
+              company's website. Assisted members of the web development team
+              who program websites using HTML, CSS, and JavaScript code. Manage
+              ongoing web pages. Liaise with the client services team. Assist
+              with general web design and web development tasks. Assist Creating
+              server accounts.
             </Typography>
           </Box>
         </Box>
