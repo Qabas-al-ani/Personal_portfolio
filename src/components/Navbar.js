@@ -135,7 +135,7 @@ const Navbar = () => {
             <a
               target="_blank"
               className="link-to-resume"
-              href="https://docs.google.com/document/d/1XrvO4Yv8akqvs_SrXWbmcN7YA_2U1fWLtSdZQi5kZ_Y/edit?usp=sharing"
+              href="https://docs.google.com/document/d/1-hmxhV5IpgQzJGOHVml4DiIqzTyYiK8T/edit?usp=sharing&ouid=116651010306398433414&rtpof=true&sd=true"
               download="qabas-alani-resume"
               rel="noreferrer"
             >
