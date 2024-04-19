@@ -153,12 +153,12 @@ const Resume = () => {
           <Box component="div" className={classes.timeLineItem} id="bootcamp">
             <Typography
               variant="h5"
-              align="right"
+              align="left"
               className={classes.subHeading}
             >
               Quantworks Inc
             </Typography>
-            <Typography variant="body1" align="right">
+            <Typography variant="body1" align="left">
               Software Engineer
             </Typography>
             <br />
@@ -167,10 +167,10 @@ const Resume = () => {
               I've honed my skills and contributed to numerous projects over the
               past two years.
             </Typography>
-            <Typography variant="body1" align="right">
+            <br />
+            <Typography variant="body1" align="left">
               Tools & Languages
             </Typography>
-            <br />
             <br />
             <Box
               component="img"
@@ -257,12 +257,12 @@ const Resume = () => {
           <Box component="div" className={classes.timeLineItem}>
             <Typography
               variant="h5"
-              align="right"
+              align="left"
               className={classes.subHeading}
             >
               Technologies
             </Typography>
-            <Typography variant="body1" align="right">
+            <Typography variant="body1" align="left">
               Tools & Languages
             </Typography>
             <br />
@@ -448,12 +448,12 @@ const Resume = () => {
           <Box component="div" className={classes.timeLineItem} id="front-end">
             <Typography
               variant="h5"
-              align="right"
+              align="left"
               className={classes.subHeading}
             >
               Front End Web Developer
             </Typography>
-            <Typography variant="body1" align="right">
+            <Typography variant="body1" align="left">
               QMQ Real Estate Inc
             </Typography>
             <br />
