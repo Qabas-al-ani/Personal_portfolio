@@ -37,15 +37,17 @@ const AboutMe = () => {
         </Typography>
         <br />
         <Typography className={classes.subtitle} variant="h5">
-          I have nurtured a keen interest in Computer Science. I find it
-          fascinating along with Communications and Media. The digital age has
-          revolutionized our way of life; motivating me to become part of it,
-          the first step of which was joining the UNC Chapel Hill Coding
-          Bootcamp to gain a relevant qualification. When I was a child, I was
-          engrossed by computer games which later developed into a passion for
-          programming. I love problem solving, Math and Physics and that is why
-          I chose web development as my future career because of its
-          flexibility, innovativeness, and challenging nature.
+          I have nurtured a keen interest in Computer Science, finding it
+          fascinating alongside Communications and Media. The digital age has
+          revolutionized our way of life, motivating me to become a part of it.
+          The first step of this journey was joining the UNC Chapel Hill Coding
+          Bootcamp to gain a relevant qualification. As a child, I was engrossed
+          by computer games, which later developed into a passion for
+          programming. I love problem-solving, mathematics, and physics, which
+          is why I have chosen web development as my future career due to its
+          flexibility, innovativeness, and challenging nature. Currently
+          employed as a Full Stack Developer at Quantworks, where I've honed my
+          skills and contributed to numerous projects over the past two years.
         </Typography>
       </Box>
     </>

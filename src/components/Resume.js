@@ -148,8 +148,33 @@ const Resume = () => {
             variant="h2"
             className={`${classes.timeLineYear} ${classes.timeLineItem} `}
           >
-            2021
+            2024
           </Typography>
+          <Box component="div" className={classes.timeLineItem} id="bootcamp">
+            <Typography
+              variant="h5"
+              align="right"
+              className={classes.subHeading}
+            >
+              Quantworks.Inc
+            </Typography>
+            <Typography variant="body1" align="right">
+              Full Stack Developer
+            </Typography>
+            <br />
+            <Typography variant="subtitle1" align="right">
+              Currently employed as a Full Stack Developer at Quantworks, where
+              I've honed my skills and contributed to numerous projects over the
+              past two years.
+            </Typography>
+          </Box>
+          <Typography
+            variant="h2"
+            className={`${classes.timeLineYear} ${classes.timeLineItem} `}
+          >
+            2022
+          </Typography>
+
           <Box component="div" className={classes.timeLineItem} id="bootcamp">
             <Typography
               variant="h5"

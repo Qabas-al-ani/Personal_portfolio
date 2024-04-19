@@ -33,7 +33,7 @@ const Header = () => {
   return (
     <Box className={classes.typedContainer}>
       <Grid container justifyContent="center">
-        <Avatar  className={classes.avatar} src={avatar} alt="Qabas Al Ani" />
+        <Avatar className={classes.avatar} src={avatar} alt="Qabas Al Ani" />
       </Grid>
       <Typography className={classes.title} variant="h4">
         <Typed
@@ -48,8 +48,6 @@ const Header = () => {
           style={{ textShadow: "white 1px 0 5px" }}
           strings={[
             "Full Stack Web Developer",
-            "Graduate of the UNC Chapel Hill Coding Boot Camp",
-            "MERN Stack",
             "Love developing apps and websites with a focus on mobile-first design",
           ]}
           typeSpeed={40}
