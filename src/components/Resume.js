@@ -156,17 +156,78 @@ const Resume = () => {
               align="right"
               className={classes.subHeading}
             >
-              Quantworks.Inc
+              Quantworks Inc
             </Typography>
             <Typography variant="body1" align="right">
-              Full Stack Developer
+              Software Engineer
             </Typography>
             <br />
-            <Typography variant="subtitle1" align="right">
-              Currently employed as a Full Stack Developer at Quantworks, where
+            <Typography variant="subtitle1" align="left">
+              Currently employed as a Full Stack Developer at Quantworks , where
               I've honed my skills and contributed to numerous projects over the
               past two years.
             </Typography>
+            <Typography variant="body1" align="right">
+              Tools & Languages
+            </Typography>
+            <br />
+            <br />
+            <Box
+              component="img"
+              className="language-1"
+              src="./badges/aws.png"
+              alt="pic"
+              sx={{ height: 50, width: 50, margin: 5 }}
+            />
+            <Box
+              component="img"
+              className="language-1"
+              src="./badges/angular.png"
+              alt="pic"
+              sx={{ height: 50, width: 50, margin: 5 }}
+            />
+            <Box
+              component="img"
+              className="language-1"
+              src="./badges/chartjs.png"
+              alt="pic"
+              sx={{ height: 50, width: 50, margin: 5 }}
+            />
+            <Box
+              component="img"
+              className="language-1"
+              src="./badges/ag-grid.png"
+              alt="pic"
+              sx={{ height: 50, width: 50, margin: 5 }}
+            />
+            <Box
+              component="img"
+              className="language-1"
+              src="./badges/postgres.png"
+              alt="pic"
+              sx={{ height: 50, width: 50, margin: 5 }}
+            />
+            <Box
+              component="img"
+              className="language-1"
+              src="./badges/serverless.png"
+              alt="pic"
+              sx={{ height: 50, width: 50, margin: 5 }}
+            />
+            <Box
+              component="img"
+              className="language-1"
+              src="./badges/python.png"
+              alt="pic"
+              sx={{ height: 50, width: 50, margin: 5 }}
+            />
+            <Box
+              component="img"
+              className="language-1"
+              src="./badges/ag-grid.png"
+              alt="pic"
+              sx={{ height: 50, width: 50, margin: 5 }}
+            />
           </Box>
           <Typography
             variant="h2"
@@ -187,7 +248,7 @@ const Resume = () => {
               Full Stack Web Developer
             </Typography>
             <br />
-            <Typography variant="subtitle1" align="center">
+            <Typography variant="subtitle1" align="left">
               Full Stack Web Developer, love developing apps and websites with a
               focus on mobile-first design & graduate of the UNC Chapel Hill
               Coding Boot Camp
@@ -375,7 +436,7 @@ const Resume = () => {
               CTI-110 Web, Pgm, & Db Foundation at wake tech
             </Typography>
             <br />
-            <Typography variant="subtitle1" align="center">
+            <Typography variant="subtitle1" align="left">
               I learned programming, mark-up language and services on the
               Internet. And topics include standard mark-up language Internet
               services, creating web pages, using search engines, file transfer
