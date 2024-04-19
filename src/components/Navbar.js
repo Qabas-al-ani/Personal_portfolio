@@ -149,7 +149,7 @@ const Navbar = () => {
             <PhoneEnabledOutlined />
           </ListItemIcon>
           <ListItemText className={classes.ListItem}>
-            &nbsp; 919 916 9571
+            &nbsp; 919 345 4370
           </ListItemText>
         </ListItem>
       </List>
