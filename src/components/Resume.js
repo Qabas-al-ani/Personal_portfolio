@@ -162,11 +162,64 @@ const Resume = () => {
               Software Engineer
             </Typography>
             <br />
-            <Typography variant="subtitle1" align="left">
-              Currently employed as a Full Stack Developer at Quantworks , where
-              I've honed my skills and contributed to numerous projects over the
-              past two years.
-            </Typography>
+            <div>
+              <Typography variant="subtitle1" align="left">
+                Currently employed as a Full Stack Developer at Quantworks,
+                where I've honed my skills and contributed to numerous projects
+                over the past two years.
+              </Typography>
+              <Typography variant="subtitle1" align="left">
+                Key Accomplishments:
+              </Typography>
+              <Typography variant="subtitle1" align="left">
+                Backend Experience:
+              </Typography>
+              <ul>
+                <li>
+                  Implemented Python for robust server-side functionality,
+                  ensuring efficient backend operations.
+                </li>
+                <li>
+                  Leveraged AWS services, including Lambda and API Gateway, to
+                  deliver scalable and cost-effective backend solutions.
+                </li>
+                <li>
+                  Streamlined deployment and maintenance processes by
+                  implementing Serverless architecture, enhancing agility and
+                  reducing operational overhead.
+                </li>
+                <li>
+                  Designed and optimized database structures and queries,
+                  improving performance and data management efficiency.
+                </li>
+              </ul>
+              <Typography variant="subtitle1" align="left">
+                Frontend Experience:
+              </Typography>
+              <ul>
+                <li>
+                  Spearheaded frontend development projects using Angular,
+                  React, and ag-Grid, delivering intuitive and responsive user
+                  interfaces.
+                </li>
+                <li>
+                  Collaborated closely with design teams to translate UI/UX
+                  wireframes into interactive web components, ensuring
+                  consistency and usability.
+                </li>
+                <li>
+                  Employed best practices in frontend development to enhance
+                  user experience and accessibility across various devices and
+                  browsers.
+                </li>
+                <li>
+                  Integrated emerging technologies and frameworks into frontend
+                  workflows, driving innovation and user engagement while
+                  staying at the forefront of industry trends.
+                </li>
+              </ul>
+            </div>
+
             <br />
             <Typography variant="body1" align="left">
               Tools & Languages
