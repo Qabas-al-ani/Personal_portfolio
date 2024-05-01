@@ -172,14 +172,14 @@ const Projects = () => {
                     <GitHub style={{ marginRight: 5 }} />
                     GitHub
                   </Button>
-                  <Button
+                  {/* <Button
                     size="small"
                     color="primary"
                     href="https://young-hollows-20691.herokuapp.com/"
                     target="_blank"
                   >
                     <TvSharp style={{ marginRight: 5 }} /> Demo
-                  </Button>
+                  </Button> */}
                 </CardActions>
               </CardContent>
             </CardActionArea>
@@ -269,14 +269,14 @@ const Projects = () => {
                     <GitHub style={{ marginRight: 5 }} />
                     GitHub
                   </Button>
-                  <Button
+                  {/* <Button
                     size="small"
                     color="primary"
                     href="https://grim-cat-76535.herokuapp.com/"
                     target="_blank"
                   >
                     <TvSharp style={{ marginRight: 5 }} /> Demo
-                  </Button>
+                  </Button> */}
                 </CardActions>
               </CardContent>
             </CardActionArea>
@@ -363,13 +363,13 @@ const Projects = () => {
                     <GitHub style={{ marginRight: 5 }} />
                     GitHub
                   </Button>
-                  <Button
+                  {/* <Button
                     size="small"
                     color="primary"
                     href="https://afternoon-island-53749.herokuapp.com/"
                   >
                     <TvSharp style={{ marginRight: 5 }} /> Demo
-                  </Button>
+                  </Button> */}
                 </CardActions>
               </CardContent>
             </CardActionArea>
@@ -455,14 +455,14 @@ const Projects = () => {
                     <GitHub style={{ marginRight: 5 }} />
                     GitHub
                   </Button>
-                  <Button
+                  {/* <Button
                     size="small"
                     color="primary"
                     href="https://warm-hamlet-41451.herokuapp.com/"
                     target="_blank"
                   >
                     <TvSharp style={{ marginRight: 5 }} /> Demo
-                  </Button>
+                  </Button> */}
                 </CardActions>
               </CardContent>
             </CardActionArea>
@@ -548,14 +548,14 @@ const Projects = () => {
                     <GitHub style={{ marginRight: 5 }} />
                     GitHub
                   </Button>
-                  <Button
+                  {/* <Button
                     size="small"
                     color="primary"
                     href="https://serene-cove-48650.herokuapp.com/"
                     target="_blank"
                   >
                     <TvSharp style={{ marginRight: 5 }} /> Demo
-                  </Button>
+                  </Button> */}
                 </CardActions>
               </CardContent>
             </CardActionArea>
@@ -641,14 +641,14 @@ const Projects = () => {
                     <GitHub style={{ marginRight: 5 }} />
                     GitHub
                   </Button>
-                  <Button
+                  {/* <Button
                     size="small"
                     color="primary"
                     href="https://young-waters-38930.herokuapp.com/?id=6160e97cf44b2100168cded8"
                     target="_blank"
                   >
                     <TvSharp style={{ marginRight: 5 }} /> Demo
-                  </Button>
+                  </Button> */}
                 </CardActions>
               </CardContent>
             </CardActionArea>
@@ -735,14 +735,14 @@ const Projects = () => {
                     <GitHub style={{ marginRight: 5 }} />
                     GitHub
                   </Button>
-                  <Button
+                  {/* <Button
                     size="small"
                     color="primary"
                     href="https://github.com/Qabas-al-ani/RESTful-API-E-Commerce/blob/main/Assets/e-commerce1.gif"
                     target="_blank"
                   >
                     <TvSharp style={{ marginRight: 5 }} /> Demo
-                  </Button>
+                  </Button> */}
                 </CardActions>
               </CardContent>
             </CardActionArea>
@@ -822,14 +822,14 @@ const Projects = () => {
                     <GitHub style={{ marginRight: 5 }} />
                     GitHub
                   </Button>
-                  <Button
+                  {/* <Button
                     size="small"
                     color="primary"
                     href="https://qabas-al-ani.github.io/Weather-Dashboard-Api/"
                     target="_blank"
                   >
                     <TvSharp style={{ marginRight: 5 }} /> Demo
-                  </Button>
+                  </Button> */}
                 </CardActions>
               </CardContent>
             </CardActionArea>
