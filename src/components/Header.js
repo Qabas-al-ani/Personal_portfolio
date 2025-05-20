@@ -48,7 +48,9 @@ const Header = () => {
           style={{ textShadow: "white 1px 0 5px" }}
           strings={[
             "Full Stack Web Developer",
-            "Love developing apps and websites with a focus on mobile-first design",
+            "Crafting Scalable & High-Performance Applications",
+            "Specialized in React, Angular, Python & AWS",
+            "Turning Ideas into Modern Web Experiences",
           ]}
           typeSpeed={40}
           backSpeed={20}

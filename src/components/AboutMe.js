@@ -36,18 +36,25 @@ const AboutMe = () => {
           About Me
         </Typography>
         <br />
-        <Typography className={classes.subtitle} variant="h5">
-          I have nurtured a keen interest in Computer Science, finding it
-          fascinating alongside Communications and Media. The digital age has
-          revolutionized our way of life, motivating me to become a part of it.
-          The first step of this journey was joining the UNC Chapel Hill Coding
-          Bootcamp to gain a relevant qualification. As a child, I was engrossed
-          by computer games, which later developed into a passion for
-          programming. I love problem-solving, mathematics, and physics, which
-          is why I have chosen web development as my future career due to its
-          flexibility, innovativeness, and challenging nature. Currently
-          employed as a Full Stack Developer at Quantworks, where I've honed my
-          skills and contributed to numerous projects over the past two years.
+        <Typography className={classes.subtitle} variant="body1" paragraph>
+          I’ve always been fascinated by the intersection of technology and
+          communication. What began as a childhood curiosity—spending hours
+          immersed in computer games— evolved into a passion for building
+          digital experiences.
+        </Typography>
+        <Typography className={classes.subtitle} variant="body1" paragraph>
+          My journey into software development started with the UNC Chapel Hill
+          Coding Bootcamp, where I gained hands-on training in full stack web
+          development. With a strong foundation in problem-solving, mathematics,
+          and physics, I found web development to be the perfect blend of
+          creativity, logic, and innovation.
+        </Typography>
+        <Typography className={classes.subtitle} variant="body1" paragraph>
+          Today, I work as a Full Stack Developer at Quantworks, where I’ve had
+          the opportunity to contribute to impactful, scalable projects across
+          diverse tech stacks. I'm driven by the ever-changing nature of the
+          digital world and motivated by the challenge of turning complex
+          problems into elegant, user-friendly solutions.
         </Typography>
       </Box>
     </>
