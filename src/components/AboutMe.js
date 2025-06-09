@@ -37,24 +37,26 @@ const AboutMe = () => {
         </Typography>
         <br />
         <Typography className={classes.subtitle} variant="body1" paragraph>
-          I’ve always been fascinated by the intersection of technology and
-          communication. What began as a childhood curiosity—spending hours
-          immersed in computer games— evolved into a passion for building
-          digital experiences.
+          I'm a Full Stack Web Developer with a strong foundation in both
+          front-end and back-end technologies, passionate about building clean,
+          scalable, and impactful digital solutions.
         </Typography>
         <Typography className={classes.subtitle} variant="body1" paragraph>
-          My journey into software development started with the UNC Chapel Hill
-          Coding Bootcamp, where I gained hands-on training in full stack web
-          development. With a strong foundation in problem-solving, mathematics,
-          and physics, I found web development to be the perfect blend of
-          creativity, logic, and innovation.
+          After completing the Full Stack Web Development Bootcamp at UNC Chapel
+          Hill, I dove headfirst into the tech industry—drawing on my background
+          in mathematics, logic, and design to quickly grow as a developer.
         </Typography>
         <Typography className={classes.subtitle} variant="body1" paragraph>
-          Today, I work as a Full Stack Developer at Quantworks, where I’ve had
-          the opportunity to contribute to impactful, scalable projects across
-          diverse tech stacks. I'm driven by the ever-changing nature of the
-          digital world and motivated by the challenge of turning complex
-          problems into elegant, user-friendly solutions.
+          For the past two years, I've worked at Quantworks, contributing to
+          cloud-based, serverless applications using technologies like React,
+          Angular, Python, Node.js, and AWS. I've led front-end architecture on
+          several projects and collaborated closely with cross-functional teams
+          to deliver efficient, user-focused solutions.
+        </Typography>
+        <Typography className={classes.subtitle} variant="body1" paragraph>
+          I'm always eager to take on new challenges and expand my
+          expertise—especially in fast-paced, collaborative environments where I
+          can create meaningful impact through clean code and thoughtful design.
         </Typography>
       </Box>
     </>
