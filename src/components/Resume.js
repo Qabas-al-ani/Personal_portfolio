@@ -148,7 +148,7 @@ const Resume = () => {
             variant="h2"
             className={`${classes.timeLineYear} ${classes.timeLineItem} `}
           >
-            Present
+            2025
           </Typography>
           <Box component="div" className={classes.timeLineItem} id="bootcamp">
             <Typography
@@ -222,37 +222,14 @@ const Resume = () => {
 
             <div>
               <Typography variant="subtitle1" align="left" paragraph>
-                As a Full Stack Developer at Quantworks, I have contributed to
-                diverse projects while continuously honing my skills over the
-                past two years.
+                As a Full Stack Developer at Quantworks (2022 – May 2025), I
+                contributed to diverse projects while continuously honing my
+                skills over the past two years.
               </Typography>
 
               <Typography variant="subtitle1" align="left" gutterBottom>
                 Key Accomplishments:
               </Typography>
-
-              <Typography variant="subtitle1" align="left" gutterBottom>
-                Backend Experience:
-              </Typography>
-              <ul>
-                <li>
-                  Developed robust server-side functionality using Python to
-                  ensure efficient and reliable backend operations.
-                </li>
-                <li>
-                  Leveraged AWS services, including Lambda and API Gateway, to
-                  deliver scalable and cost-effective backend solutions.
-                </li>
-                <li>
-                  Streamlined deployment and maintenance processes by
-                  implementing Serverless architecture, enhancing agility and
-                  reducing operational overhead.
-                </li>
-                <li>
-                  Designed and optimized database structures and queries,
-                  improving performance and data management efficiency.
-                </li>
-              </ul>
 
               <Typography variant="subtitle1" align="left" gutterBottom>
                 Frontend Experience:
@@ -277,6 +254,29 @@ const Resume = () => {
                   Integrated emerging technologies and frameworks into frontend
                   workflows, driving innovation and user engagement while
                   staying at the forefront of industry trends.
+                </li>
+              </ul>
+
+              <Typography variant="subtitle1" align="left" gutterBottom>
+                Backend Experience:
+              </Typography>
+              <ul>
+                <li>
+                  Developed robust server-side functionality using Python to
+                  ensure efficient and reliable backend operations.
+                </li>
+                <li>
+                  Leveraged AWS services, including Lambda and API Gateway, to
+                  deliver scalable and cost-effective backend solutions.
+                </li>
+                <li>
+                  Streamlined deployment and maintenance processes by
+                  implementing Serverless architecture, enhancing agility and
+                  reducing operational overhead.
+                </li>
+                <li>
+                  Designed and optimized database structures and queries,
+                  improving performance and data management efficiency.
                 </li>
               </ul>
             </div>
